@@ -15,7 +15,9 @@ CC := cc
 FLAGS := -Wall -Werror -Wextra
 
 SRCS := ft_isalpha.c \
-		main.c
+		main.c \
+		ft_isdigit.c \
+		ft_isalnum.c \
 
 OBJC := ${SRCS:.c=.o}
 

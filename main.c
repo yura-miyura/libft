@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yartym <yartym@student.42.fr>              #+#  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025-10-22 12:34:32 by yartym            #+#    #+#             */
+/*   Updated: 2025-10-22 12:34:32 by yartym           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int main(void)
+int	main(void)
 {
-	// int a = 'Z';
-	char b = 'D';
+	char	b;
 
-	printf("%i\n", isalpha(b));
-	printf("%i\n", ft_isalpha(b));
+	b = '1';
+	printf("%i\n", isalnum(b));
+	printf("%i\n", ft_isalnum(b));
 }
