@@ -1,21 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
+/*   By: yartym <yartym@student.42.fr>              #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/19 08:10:34 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/22 11:43:30 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025-10-22 10:52:20 by yartym            #+#    #+#             */
+/*   Updated: 2025-10-22 10:52:20 by yartym           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdio.h>
-# include <ctype.h>
-int	ft_isalpha(int c);
-int main(void);
-
-#endif
+int	ft_isalpha(int c)
+{
+	
+	return (c >= 'A' && c <= 'z');
+}

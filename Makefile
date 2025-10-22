@@ -10,20 +10,23 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME := libft.a
+NAME := libft
 CC := cc
 FLAGS := -Wall -Werror -Wextra
-SRCS := ???
+
+SRCS := ft_isalpha.c \
+		main.c
 
 OBJC := ${SRCS:.c=.o}
 
 all: ${NAME}
 
 ${NAME}: ${OBJC}
-	ar rcs $@ $^
+# 	ar rcs $@ $^
+	${CC} ${FLAGS} $^ -o $@
 
 ${OBJC}: ${SRCS}
-	${CC} -c $^ -o ${OBJC}
+	${CC} ${FLAGS} -c $^
 
 fclean: clean
 	rm -f ${NAME}
