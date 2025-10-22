@@ -14,9 +14,10 @@
 
 int	main(void)
 {
-	char	b;
+	unsigned char	b;
 
-	b = '1';
-	printf("%i\n", isalnum(b));
-	printf("%i\n", ft_isalnum(b));
+	b = -1;
+	printf("%i\n", isascii(b));
+	printf("%i\n", ft_isascii(b));
 }
+
