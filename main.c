@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yartym <yartym@student.42.fr>              #+#  +:+       +#+        */
+/*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-10-22 12:34:32 by yartym            #+#    #+#             */
-/*   Updated: 2025-10-22 12:34:32 by yartym           ###   ########.fr       */
+/*   Created: 2025/10/22 12:34:32 by yartym            #+#    #+#             */
+/*   Updated: 2025/10/23 08:15:53 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 int	main(void)
 {
-	unsigned char	b;
+	const char	*s;
 
-	b = -1;
-	printf("%i\n", isascii(b));
-	printf("%i\n", ft_isascii(b));
+	s = "";
+	printf("%lu\n", strlen(s));
+	printf("%lu\n", ft_strlen(s));
 }
-

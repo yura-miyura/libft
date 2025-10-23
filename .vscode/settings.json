@@ -2,6 +2,6 @@
 	"files.associations": {
 		"stdio.h": "c",
 		"libft.h": "c",
-		"ft_isdigit.C": "cpp"
+		"ft_isdigit.C": "c"
 	}
 }

@@ -1,31 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/19 08:10:34 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/23 08:15:16 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025/10/23 08:01:56 by yuriiartymi       #+#    #+#             */
+/*   Updated: 2025/10/23 08:04:11 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-// Libraries to delete
-# include <stdio.h>
-# include <ctype.h>
-# include <string.h>
-
-// Functions
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
-int	ft_isascii(int c);
-int	ft_isprint(int c);
-unsigned long	ft_strlen(const char *s);
-// Test main fnct
-int	main(void);
-
-#endif
+int	ft_isprint(int c)
+{
+	return (c >= ' ' && c <= '~');
+}
