@@ -13,19 +13,28 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdlib.h>
 // Libraries to delete
 # include <stdio.h>
-# include <ctype.h>
 # include <string.h>
+# include <strings.h>
+# include <ctype.h>
 
-// Functions
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
-int	ft_isascii(int c);
-int	ft_isprint(int c);
-unsigned long	ft_strlen(const char *s);
+// # include <ctype.h>
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
+
+// # include <string.h>
+size_t	ft_strlen(const char *s);
+void	*ft_memset(void *s, int c, size_t n);
+
+// # include <strings.h>
+void	ft_bzero(void *s, size_t n);
+
 // Test main fnct
-int	main(void);
+int		main(void);
 
 #endif

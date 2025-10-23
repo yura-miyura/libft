@@ -10,28 +10,34 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME := libft
+MAIN = main
+
+NAME := libft.a
 CC := cc
+AR = ar rcs
 FLAGS := -Wall -Werror -Wextra
 
-SRCS := ft_isalpha.c \
-		main.c \
+SRCS = ft_isalpha.c \
 		ft_isdigit.c \
 		ft_isalnum.c \
 		ft_isascii.c \
 		ft_isprint.c \
 		ft_strlen.c \
+		ft_memset.c \
+		ft_bzero.c \
 
 OBJC := ${SRCS:.c=.o}
 
 all: ${NAME}
 
 ${NAME}: ${OBJC}
-# 	ar rcs $@ $^
-	${CC} ${FLAGS} $^ -o $@
+	${AR} $< -o $@
 
 ${OBJC}: ${SRCS}
-	${CC} ${FLAGS} -c $^
+	${CC} ${FLAGS} -c $< -o $@
+
+${MAIN}:
+	${CC} ${FLAGS} main.c -L. -lft -o $@
 
 fclean: clean
 	rm -f ${NAME}

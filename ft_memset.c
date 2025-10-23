@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
+/*   By: yartym <yartym@student.42.fr>              #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 12:34:32 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/23 08:15:53 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025-10-23 14:48:48 by yartym            #+#    #+#             */
+/*   Updated: 2025-10-23 14:48:48 by yartym           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	char str1[12] = "hello world";
-	char str2[12] = "hello world";
+	unsigned char	*tmp;
 
-	printf("%s\n", str1);
-	printf("%s\n", str2);
-	ft_memset(str1, '0', 5);
-	memset(str2, '0', 5);
-	printf("%s\n", str1);
-	printf("%s\n", str2);
+	if (!s)
+		return (NULL);
+	tmp = (unsigned char *) s;
+	while (n-- > 0)
+		*tmp++ = c;
+	return (s);
 }
