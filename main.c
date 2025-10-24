@@ -14,7 +14,12 @@
 
 int	main(void)
 {
-	char str = 'a';
+	char my[13] = "hello world";
+	char lib[13] = "hello world";
 
-	printf("%i\n", ft_isalpha(str));
+	ft_memcpy(my + 1, my, 12);
+	memcpy(lib + 1, lib, 12);
+
+	printf("%s\n", my);
+	printf("%s\n", lib);
 }

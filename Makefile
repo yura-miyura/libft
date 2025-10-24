@@ -16,7 +16,8 @@ CC := cc
 AR := ar rcs
 FLAGS := -Wall -Werror -Wextra
 
-TEST = main.c
+SRC_MAIN = main.c
+
 SRCS = ft_isalpha.c \
 		ft_isdigit.c \
 		ft_isalnum.c \
@@ -25,26 +26,31 @@ SRCS = ft_isalpha.c \
 		ft_strlen.c \
 		ft_memset.c \
 		ft_bzero.c \
+		ft_memcpy.c \
+		ft_memmove.c \
 
-TESTO := ${SRCS:.c=.o}
+OBJC_MAIN := ${SRC_MAIN:.c=.o}
 OBJC := ${SRCS:.c=.o}
 
 all: ${NAME}
 
-${MAIN}: ${NAME} ${TEST}
-	${CC} ${FLAGS} $^ -L. -lft -o $@
+${MAIN}: ${OBJC_MAIN} ${NAME}
+	${CC} ${FLAGS} $< -L. -lft -o $@
+
+${OBJC_MAIN}: ${SRC_MAIN}
+	${CC} ${FLAGS} -c $^ -o $@
 
 ${NAME}: ${OBJC}
 	${AR} $@ $^
-	
-${OBJC}: ${SRCS}
+
+${OBJC}: %.o: %.c
 	${CC} ${FLAGS} -c $< -o $@
 
 fclean: clean
 	rm -f ${NAME} ${MAIN}
 
 clean:
-	rm -f ${OBJC}
+	rm -f ${OBJC} ${OBJC_MAIN}
 
 re: fclean all
 
