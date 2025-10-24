@@ -28,6 +28,8 @@ SRCS = ft_isalpha.c \
 		ft_bzero.c \
 		ft_memcpy.c \
 		ft_memmove.c \
+		ft_strlcpy.c \
+		ft_strlcat.c \
 
 OBJC_MAIN := ${SRC_MAIN:.c=.o}
 OBJC := ${SRCS:.c=.o}
@@ -35,7 +37,7 @@ OBJC := ${SRCS:.c=.o}
 all: ${NAME}
 
 ${MAIN}: ${OBJC_MAIN} ${NAME}
-	${CC} ${FLAGS} $< -L. -lft -o $@
+	${CC} ${FLAGS} $< -L. -lft -lbsd -o $@
 
 ${OBJC_MAIN}: ${SRC_MAIN}
 	${CC} ${FLAGS} -c $^ -o $@

@@ -11,15 +11,16 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include <bsd/string.h>
 int	main(void)
 {
-	char my[13] = "hello world";
-	char lib[13] = "hello world";
+	// char dest1[12] = "hello ";
+	char dest2[12] = "hello ";
+	char *src = "hello";
 
-	ft_memcpy(my + 1, my, 12);
-	memcpy(lib + 1, lib, 12);
+	// printf("%li\n", ft_strlcat(dest1, src, 4));
+	printf("%li\n", strlcat(dest2, src, 6));
 
-	printf("%s\n", my);
-	printf("%s\n", lib);
+	// printf("%s\n", dest1);
+	// printf("%s\n", dest2);
 }

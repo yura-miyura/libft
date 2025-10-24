@@ -4,6 +4,13 @@
 		"libft.h": "c",
 		"ft_isdigit.C": "c",
 		"strings.h": "c",
-		"ctype.h": "c"
+		"ctype.h": "c",
+		"array": "c",
+		"bitset": "c",
+		"string_view": "c",
+		"initializer_list": "c",
+		"ranges": "c",
+		"span": "c",
+		"utility": "c"
 	}
 }
