@@ -6,7 +6,7 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 08:10:34 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/23 08:15:16 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2025/10/24 08:19:43 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,5 @@ void	*ft_memset(void *s, int c, size_t n);
 
 // # include <strings.h>
 void	ft_bzero(void *s, size_t n);
-
-// Test main fnct
-int		main(void);
 
 #endif
