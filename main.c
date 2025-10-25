@@ -6,7 +6,7 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 12:34:32 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/25 13:40:22 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2025/10/25 17:58:36 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,8 @@
 
 int	main(void)
 {
-	char dst1[12] = "hello ";
-	char dst2[12] = "hello ";
-	char *src = "World";
+	char *str = "   2147483648 a";
 
-	printf("%lu\n", ft_strlcat(dst1, src, 12));
-	printf("%s\n", dst1);
-	printf("%lu\n", strlcat(dst2, src, 12));
-	printf("%s\n", dst2);
+	printf("%i\n", ft_atoi(str));
+	printf("%i\n", atoi(str));
 }

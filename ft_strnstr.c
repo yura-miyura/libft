@@ -1,31 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/24 15:33:24 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/25 14:05:05 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025/10/25 15:40:43 by yuriiartymi       #+#    #+#             */
+/*   Updated: 2025/10/25 17:08:20 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t	full_size;
-	size_t	j;
 	size_t	i;
+	size_t	j;
+	char	*trun_hay;
 
-	j = ft_strlen(dst);
-	full_size = ft_strlen(src);
-	if (j >= size)
-		return (full_size + size);
-	full_size += j;
+	trun_hay = (char *) haystack;
+	if (!*needle)
+		return (trun_hay);
 	i = 0;
-	while (j < size - 1 && src[i])
-		dst[j++] = src[i++];
-	dst[j] = '\0';
-	return (full_size);
+	while (trun_hay[i] && i < len)
+	{
+		if (trun_hay[i] == *needle)
+		{
+			j = 0;
+			while (trun_hay[i + j] && needle[j]
+				&& trun_hay[i + j] == needle[j] && i + j < len)
+				j++;
+			if (!needle[j])
+				return (trun_hay + i);
+		}
+		i++;
+	}
+	return (NULL);
 }

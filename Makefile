@@ -6,7 +6,7 @@
 #    By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/21 18:12:56 by yuriiartymi       #+#    #+#              #
-#    Updated: 2025/10/24 23:35:41 by yuriiartymi      ###   ########.fr        #
+#    Updated: 2025/10/25 17:10:38 by yuriiartymi      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,11 @@ SRCS = ft_isalpha.c \
 		ft_toupper.c \
 		ft_strchr.c \
 		ft_strrchr.c \
+		ft_strncmp.c \
+		ft_memchr.c \
+		ft_memcmp.c \
+		ft_strnstr.c \
+		ft_atoi.c \
 
 OBJC_MAIN := ${SRC_MAIN:.c=.o}
 OBJC := ${SRCS:.c=.o}

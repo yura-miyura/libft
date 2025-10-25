@@ -1,31 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/24 15:33:24 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/25 14:05:05 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025/10/25 13:42:08 by yuriiartymi       #+#    #+#             */
+/*   Updated: 2025/10/25 14:07:01 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t	full_size;
-	size_t	j;
 	size_t	i;
 
-	j = ft_strlen(dst);
-	full_size = ft_strlen(src);
-	if (j >= size)
-		return (full_size + size);
-	full_size += j;
+	if (!n)
+		return (0);
 	i = 0;
-	while (j < size - 1 && src[i])
-		dst[j++] = src[i++];
-	dst[j] = '\0';
-	return (full_size);
+	while (s1[i] && s2[i] && s1[i] == s2[i] && i < n - 1)
+		i++;
+	return ((unsigned char) s1[i] - (unsigned char) s2[i]);
 }
