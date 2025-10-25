@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 12:34:32 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/25 13:40:22 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025/10/24 19:21:30 by yuriiartymi       #+#    #+#             */
+/*   Updated: 2025/10/24 19:43:21 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
+int	ft_tolower(int c)
 {
-	char dst1[12] = "hello ";
-	char dst2[12] = "hello ";
-	char *src = "World";
-
-	printf("%lu\n", ft_strlcat(dst1, src, 12));
-	printf("%s\n", dst1);
-	printf("%lu\n", strlcat(dst2, src, 12));
-	printf("%s\n", dst2);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	return (c);
 }

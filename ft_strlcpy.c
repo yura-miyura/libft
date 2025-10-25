@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yartym <yartym@student.42.fr>              #+#  +:+       +#+        */
+/*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-10-24 13:28:22 by yartym            #+#    #+#             */
-/*   Updated: 2025-10-24 13:28:22 by yartym           ###   ########.fr       */
+/*   Created: 2025/10/24 13:28:22 by yartym            #+#    #+#             */
+/*   Updated: 2025/10/25 08:50:35 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		return (src_size);
 	while (++i < size - 1 && src[i])
 		dst[i] = src[i];
-	// Should it fill all the empty spaces with \0
 	dst[i] = '\0';
 	return (src_size);
 }

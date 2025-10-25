@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 12:34:32 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/25 13:40:22 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025/10/24 23:36:26 by yuriiartymi       #+#    #+#             */
+/*   Updated: 2025/10/25 08:50:18 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
+char	*ft_strrchr(const char *s, int c)
 {
-	char dst1[12] = "hello ";
-	char dst2[12] = "hello ";
-	char *src = "World";
+	char	*loc;
+	size_t	i;
 
-	printf("%lu\n", ft_strlcat(dst1, src, 12));
-	printf("%s\n", dst1);
-	printf("%lu\n", strlcat(dst2, src, 12));
-	printf("%s\n", dst2);
+	loc = (char *) s;
+	i = ft_strlen(loc) + 1;
+	while (--i > 0)
+		if (*(loc + i) == c)
+			return (loc + i);
+	if (*loc == c)
+		return (loc);
+	return (NULL);
 }
