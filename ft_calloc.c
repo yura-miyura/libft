@@ -14,14 +14,15 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	unsigned char	*memory;
-	size_t			space;
+	void	*memory;
+	size_t	space;
 
-	space = sizeof (size) * count;
+	if (size > (size_t)(-1) / count)
+		return (NULL);
+	space = count * size;
 	memory = malloc(space);
 	if (!memory)
 		return (NULL);
-	while (space-- > 0)
-		memory[space] = 0;
-	return ((void *) memory);
+	ft_bzero(memory, space);
+	return (memory);
 }

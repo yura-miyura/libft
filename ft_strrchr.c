@@ -14,15 +14,15 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*loc;
-	size_t	i;
+	char			*loc;
+	unsigned char	cc;
+	size_t			i;
 
 	loc = (char *) s;
+	cc = c;
 	i = ft_strlen(loc) + 1;
-	while (--i > 0)
-		if (*(loc + i) == c)
+	while (i > 0)
+		if (*(loc + --i) == cc)
 			return (loc + i);
-	if (*loc == c)
-		return (loc);
 	return (NULL);
 }

@@ -14,16 +14,18 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char	*loc;
+	char			*loc;
+	unsigned char	cc;
 
 	loc = (char *) s;
+	cc = c;
 	while (*loc)
 	{
-		if (*loc == c)
+		if (*loc == cc)
 			return (loc);
 		loc++;
 	}
-	if (*loc == c)
+	if (*loc == cc)
 		return (loc);
 	return (NULL);
 }

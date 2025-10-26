@@ -14,10 +14,10 @@
 
 int	main(void)
 {
-	char	*str;
-	char	*new_str;
+	char	*str = "tripouille";
+	char	*sub;
 
-	new_str = ft_strdup(str);
-	printf("%p\n", new_str);
-	free(new_str);
+	sub = ft_substr(str, 100, 1);
+	printf("%s\n", sub);
+	free(sub);
 }
