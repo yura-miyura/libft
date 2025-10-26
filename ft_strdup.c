@@ -1,23 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 12:34:32 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/26 08:58:38 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025/10/26 08:30:12 by yuriiartymi       #+#    #+#             */
+/*   Updated: 2025/10/26 08:57:37 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
+char	*ft_strdup(const char *s1)
 {
-	char	*str;
 	char	*new_str;
+	size_t	size;
 
-	new_str = ft_strdup(str);
-	printf("%p\n", new_str);
-	free(new_str);
+	size = ft_strlen(s1) + 1;
+	new_str = malloc(sizeof (char) * size);
+	if (!new_str)
+		return (NULL);
+	while (size-- > 0)
+		new_str[size] = s1[size];
+	return (new_str);
 }
