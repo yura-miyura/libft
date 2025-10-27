@@ -6,14 +6,14 @@
 #    By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/21 18:12:56 by yuriiartymi       #+#    #+#              #
-#    Updated: 2025/10/26 09:03:27 by yuriiartymi      ###   ########.fr        #
+#    Updated: 2025/10/27 08:52:31 by yuriiartymi      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 MAIN := main
 NAME := libft.a
 CC := cc
-AR := ar rcs
+AR := ar -rcs
 FLAGS := -Wall -Werror -Wextra
 
 SRC_MAIN = main.c
@@ -42,6 +42,8 @@ SRCS = ft_isalpha.c \
 		ft_calloc.c \
 		ft_strdup.c \
 		ft_substr.c \
+		ft_strjoin.c \
+		ft_strtrim.c \
 
 OBJC_MAIN := ${SRC_MAIN:.c=.o}
 OBJC := ${SRCS:.c=.o}

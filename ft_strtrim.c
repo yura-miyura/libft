@@ -1,24 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 12:34:32 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/27 13:59:15 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025/10/27 08:51:33 by yuriiartymi       #+#    #+#             */
+/*   Updated: 2025/10/27 14:27:26 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*str1;
-	char	*str2;
 	char	*new;
+	int	size;
+	int	i;
+	int j;
 
-	new = strtrim(str1, str2);
-	printf("%s\n", new);
-	free(new);
+	i = 0;
+	while (s1[i])
+	{
+		j = 0;
+		mem
+		while((set[j]))
+		{
+			if (s1[i] != set[j++])
+				???;
+
+		}
+		i++;
+	}
 }
