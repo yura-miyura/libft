@@ -14,7 +14,7 @@ MAIN := main
 NAME := libft.a
 CC := cc
 AR := ar -rcs
-FLAGS := -Wall -Werror -Wextra
+FLAGS := -Wall -Werror -Wextra -g3
 
 SRC_MAIN = main.c
 

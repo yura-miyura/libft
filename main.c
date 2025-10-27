@@ -14,12 +14,12 @@
 
 int	main(void)
 {
-	char	*str = "";
-	char	*set = " x";
-	char	*new;
+	char	*str = "Hello world";
+	char	sep = ' ';
 
-	new = ft_strtrim(str, set);
-	printf("%lu\n", ft_strlen(new));
-	printf("%s\n", new);
+	char **new = ft_split(str, sep);
+	for (int i = 0; i < 2; i++)
+		printf("%s\n", new[i]);
+
 	free(new);
 }
