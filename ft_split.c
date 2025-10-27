@@ -1,25 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
+/*   By: yartym <yartym@student.42.fr>              #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 12:34:32 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/27 13:59:15 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025-10-27 16:57:58 by yartym            #+#    #+#             */
+/*   Updated: 2025-10-27 16:57:58 by yartym           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
-{
-	char	*str = "";
-	char	*set = " x";
-	char	*new;
-
-	new = ft_strtrim(str, set);
-	printf("%lu\n", ft_strlen(new));
-	printf("%s\n", new);
-	free(new);
-}
+char	**ft_split(char const *s, char c);

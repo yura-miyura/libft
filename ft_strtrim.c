@@ -12,24 +12,37 @@
 
 #include "libft.h"
 
+static int	is_char_in_set(char c, char const *set)
+{
+	int	i;
+	int	is_in;
+
+	is_in = 0;
+	i = 0;
+	while (set[i] && !is_in)
+		if (c == set[i++])
+			is_in = 1;
+	return (is_in);
+}
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*new;
-	int	size;
-	int	i;
-	int j;
+	int		start;
+	int		end;
+	int		sub_size;
 
-	i = 0;
-	while (s1[i])
-	{
-		j = 0;
-		mem
-		while((set[j]))
-		{
-			if (s1[i] != set[j++])
-				???;
-
-		}
-		i++;
-	}
+	end = ft_strlen(s1) - 1;
+	start = 0;
+	while (s1[start] && is_char_in_set(s1[start], set))
+		start++;
+	while (end >= 0 && end >= start && is_char_in_set(s1[end], set))
+		end--;
+	sub_size = end - start + 1;
+	new = malloc(sizeof (char) * (sub_size + 1));
+	if (!new)
+		return (NULL);
+	ft_memcpy(new, s1 + start, sub_size);
+	new[sub_size] = '\0';
+	return (new);
 }

@@ -44,6 +44,7 @@ SRCS = ft_isalpha.c \
 		ft_substr.c \
 		ft_strjoin.c \
 		ft_strtrim.c \
+		ft_split.c \
 
 OBJC_MAIN := ${SRC_MAIN:.c=.o}
 OBJC := ${SRCS:.c=.o}
