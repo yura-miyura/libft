@@ -11,6 +11,7 @@
 		"initializer_list": "c",
 		"ranges": "c",
 		"span": "c",
-		"utility": "c"
+		"utility": "c",
+		"libft_bonus.h": "c"
 	}
 }

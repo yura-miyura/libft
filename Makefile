@@ -6,7 +6,7 @@
 #    By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/21 18:12:56 by yuriiartymi       #+#    #+#              #
-#    Updated: 2025/10/28 15:37:38 by yuriiartymi      ###   ########.fr        #
+#    Updated: 2025/10/28 19:04:47 by yuriiartymi      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,29 +53,46 @@ SRCS = ft_isalpha.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
 
+BOUNUS = ft_lstnew.c \
+		ft_lstadd_front.c \
+		ft_lstsize.c \
+		ft_lstlast.c \
+		ft_lstadd_back.c \
+		ft_lstdelone.c \
+		ft_lstclear.c \
+		ft_lstiter.c \
+		ft_lstmap.c \
+
+BONUS_OBJC = ${BOUNUS:.c=.o}
 OBJC_MAIN := ${SRC_MAIN:.c=.o}
 OBJC := ${SRCS:.c=.o}
 
-all: ${NAME}
+all: ${NAME} 
 
-${MAIN}: ${OBJC_MAIN} ${NAME}
+${MAIN}: ${OBJC_MAIN} bonus
 	${CC} ${FLAGS} $< -L. -lft -o $@
+	
+bonus: ${OBJC} ${BONUS_OBJC}
+	${AR} ${NAME} $^
 
 ${OBJC_MAIN}: ${SRC_MAIN}
 	${CC} ${FLAGS} -c $^ -o $@
-
+	
 ${NAME}: ${OBJC}
 	${AR} $@ $^
 
 ${OBJC}: %.o: %.c
 	${CC} ${FLAGS} -c $< -o $@
+	
+${BONUS_OBJC}: %.o: %.c
+	${CC} ${FLAGS} -c $< -o $@
 
 fclean: clean
-	rm -f ${NAME} ${MAIN}
+	rm -f ${NAME} ${MAIN} 
 
 clean:
-	rm -f ${OBJC} ${OBJC_MAIN}
+	rm -f ${OBJC} ${OBJC_MAIN} ${BONUS_OBJC}
 
 re: fclean all
 
-.PHONY: all fclean clean re
+.PHONY: all fclean clean re bonus

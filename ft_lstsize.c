@@ -1,20 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 12:34:32 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/28 18:56:07 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025/10/28 18:56:55 by yuriiartymi       #+#    #+#             */
+/*   Updated: 2025/10/28 18:57:10 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
-{
-	t_list *list = ft_lstnew("hello");
-
-	printf("%s\n", (char *)list->content);
-}
+int	ft_lstsize(t_list *lst);

@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 12:34:32 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/28 18:56:07 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025/10/28 16:24:12 by yuriiartymi       #+#    #+#             */
+/*   Updated: 2025/10/28 18:53:44 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
+t_list	*ft_lstnew(void *content)
 {
-	t_list *list = ft_lstnew("hello");
+	t_list	*list;
 
-	printf("%s\n", (char *)list->content);
+	list = malloc(sizeof (t_list));
+	if (!list)
+		return (NULL);
+	list->content = content;
+	list->next = NULL;
+	return (list);
 }

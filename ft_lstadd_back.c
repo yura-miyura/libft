@@ -1,20 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 12:34:32 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/28 18:56:07 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025/10/28 18:58:40 by yuriiartymi       #+#    #+#             */
+/*   Updated: 2025/10/28 18:59:10 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
-{
-	t_list *list = ft_lstnew("hello");
-
-	printf("%s\n", (char *)list->content);
-}
+void	ft_lstadd_back(t_list **lst, t_list *new);

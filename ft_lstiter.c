@@ -1,20 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 12:34:32 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/28 18:56:07 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025/10/28 19:02:55 by yuriiartymi       #+#    #+#             */
+/*   Updated: 2025/10/28 19:03:07 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
-{
-	t_list *list = ft_lstnew("hello");
-
-	printf("%s\n", (char *)list->content);
-}
+void	ft_lstiter(t_list *lst, void (*f)(void *));
