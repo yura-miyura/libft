@@ -6,7 +6,7 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 16:57:58 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/28 08:20:50 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2025/10/28 08:25:43 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int	count_words(char const *s, char c)
 	return (words);
 }
 
-static char	**fill_array(char	**strs, char const *s, char c, int words)
+static int	fill_array(char	**strs, char const *s, char c, int words)
 {
 	int	start;
 	int	end;
@@ -47,12 +47,12 @@ static char	**fill_array(char	**strs, char const *s, char c, int words)
 			end++;
 		strs[word] = ft_substr(s, start, end - start);
 		if (!strs[word])
-			return (NULL);
+			return (1);
 		start = end;
 		word++;
 	}
 	strs[word] = NULL;
-	return (strs);
+	return (0);
 }
 
 char	**ft_split(char const *s, char c)
@@ -64,6 +64,10 @@ char	**ft_split(char const *s, char c)
 	strs = malloc(sizeof (char *) * (words + 1));
 	if (!strs)
 		return (NULL);
-	strs = fill_array(strs, s, c, words);
+	if (fill_array(strs, s, c, words))
+	{
+		free(strs);
+		return (NULL);
+	}
 	return (strs);
 }
