@@ -6,7 +6,7 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 08:27:01 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/28 09:16:18 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2025/10/28 09:20:13 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,7 @@ char	*ft_itoa(int n)
 /* #include <stdio.h>
 int	main(void)
 {
-	printf("%s\n", ft_itoa(0));
+	char *str = ft_itoa(-2147483648);
+	printf("%s\n", str);
+	free(str);
 } */

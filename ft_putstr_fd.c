@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 12:34:32 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/28 15:58:55 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025/10/28 15:25:12 by yuriiartymi       #+#    #+#             */
+/*   Updated: 2025/10/28 15:27:30 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
+void	ft_putstr_fd(char *s, int fd)
 {
-	ft_putnbr_fd(INT_MIN, 1);
+	size_t	s_len;
+
+	s_len = ft_strlen(s);
+	write(fd, s, s_len);
 }

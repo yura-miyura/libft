@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 12:34:32 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/28 15:58:55 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025/10/28 09:21:01 by yuriiartymi       #+#    #+#             */
+/*   Updated: 2025/10/28 11:53:59 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	ft_putnbr_fd(INT_MIN, 1);
+	char	*new_s;
+	size_t	i;
+
+	i = 0;
+	new_s = malloc(sizeof (char) * ft_strlen(s) + 1);
+	if (!new_s)
+		return (NULL);
+	while (s[i])
+	{
+		new_s[i] = f(i, s[i]);
+		i++;
+	}
+	new_s[i] = '\0';
+	return (new_s);
 }
