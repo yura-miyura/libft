@@ -6,7 +6,7 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 12:34:32 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/28 08:17:03 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2025/10/28 09:12:18 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,7 @@
 
 int	main(void)
 {
-	char	*str = "hello world";
-	char	sep = ' ';
-
-	char **new = ft_split(str, sep);
-	int	i = 0;
-	while (i < 3)
-		printf("%s\n", new[i++]);
-	free(new);
+	char *str = ft_itoa(-2147483648);
+	printf("%s\n", str);
+	free(str);
 }
