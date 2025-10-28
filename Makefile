@@ -6,7 +6,7 @@
 #    By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/21 18:12:56 by yuriiartymi       #+#    #+#              #
-#    Updated: 2025/10/27 08:52:31 by yuriiartymi      ###   ########.fr        #
+#    Updated: 2025/10/28 08:09:23 by yuriiartymi      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ MAIN := main
 NAME := libft.a
 CC := cc
 AR := ar -rcs
-FLAGS := -Wall -Werror -Wextra -g3
+FLAGS := -Wall -Werror -Wextra
 
 SRC_MAIN = main.c
 
