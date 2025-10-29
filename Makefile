@@ -78,11 +78,14 @@ ${BONUS_OBJC}: %.o: %.c
 	${CC} ${FLAGS} -c $< -o $@
 
 fclean: clean
-	rm -f ${NAME} ${MAIN}
+	rm -f ${NAME}
 
 clean:
-	rm -f ${OBJC} ${OBJC_MAIN} ${BONUS_OBJC}
+	rm -f ${OBJC} ${BONUS_OBJC}
 
 re: fclean all
 
 .PHONY: all fclean clean re bonus
+
+# https://github.com/Tripouille/libftTester
+# https://github.com/0x050f/libft-war-machine

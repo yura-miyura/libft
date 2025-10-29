@@ -17,8 +17,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-// Libraries to delete
-# include <stdio.h>
 
 typedef struct s_list
 {
