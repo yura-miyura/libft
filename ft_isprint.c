@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+// Is printable
 int	ft_isprint(int c)
 {
 	return (c >= ' ' && c <= '~');

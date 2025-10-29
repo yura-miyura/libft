@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+// Creates a new word
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*list;

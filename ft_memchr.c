@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+// Returns location of the character in memory address
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*temp_s;

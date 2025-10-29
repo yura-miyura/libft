@@ -44,6 +44,7 @@ static void	put_numbers(int n, char *n_str, int n_len)
 	n_str[n_len - 1] = n % 10 + '0';
 }
 
+// Returns int as a stirng
 char	*ft_itoa(int n)
 {
 	size_t	size;

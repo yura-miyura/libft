@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+// Copies memmory addres to the new dst
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	unsigned char		*dst_tmp;

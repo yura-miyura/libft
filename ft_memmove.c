@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+// Moves memory address and can overlap
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*tmp_dest;

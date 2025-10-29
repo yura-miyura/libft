@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+// Allocates memmory for amount of objcs of size
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*memory;

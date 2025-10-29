@@ -6,7 +6,7 @@
 #    By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/21 18:12:56 by yuriiartymi       #+#    #+#              #
-#    Updated: 2025/10/28 19:04:47 by yuriiartymi      ###   ########.fr        #
+#    Updated: 2025/10/29 20:54:39 by yartym           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -89,3 +89,4 @@ re: fclean all
 
 # https://github.com/Tripouille/libftTester
 # https://github.com/0x050f/libft-war-machine
+# https://github.com/alelievr/libft-unit-test

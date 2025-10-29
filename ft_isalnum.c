@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+// Is all numbers
 int	ft_isalnum(int c)
 {
 	return (ft_isalpha(c) || ft_isdigit(c));

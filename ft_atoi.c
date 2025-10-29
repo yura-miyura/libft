@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+// Returns int from string number, can pass
+// inserted + or - in the begining of the word
+// any interacions are with letter going to be treated as 0
 int	ft_atoi(const char *str)
 {
 	int		result;

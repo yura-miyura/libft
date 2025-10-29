@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+// Clears the whole list
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*tmp;

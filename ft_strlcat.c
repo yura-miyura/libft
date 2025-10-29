@@ -12,15 +12,25 @@
 
 #include "libft.h"
 
+static size_t ft_strnlen(const char *s, size_t size)
+{
+	size_t	i;
+
+	i = 0;
+	while(i < size && s[i])
+		i++;
+	return (i);
+}
+
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	full_size;
 	size_t	j;
 	size_t	i;
 
-	j = ft_strlen(dst);
+	j = ft_strnlen(dst, size);
 	full_size = ft_strlen(src);
-	if (j >= size)
+	if (j == size)
 		return (full_size + size);
 	full_size += j;
 	i = 0;

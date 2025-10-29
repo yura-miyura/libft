@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+// Fills values of pointer with 0 value of size n
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*tmp;

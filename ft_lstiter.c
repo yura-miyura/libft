@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+// Itterate througth content in list
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	while (lst)
