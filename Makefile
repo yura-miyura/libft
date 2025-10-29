@@ -10,13 +10,10 @@
 #                                                                              #
 # **************************************************************************** #
 
-MAIN := main
 NAME := libft.a
 CC := cc
 AR := ar -rcs
 FLAGS := -Wall -Werror -Wextra
-
-SRC_MAIN = main.c
 
 SRCS = ft_isalpha.c \
 		ft_isdigit.c \
@@ -64,31 +61,24 @@ BOUNUS = ft_lstnew.c \
 		ft_lstmap.c \
 
 BONUS_OBJC = ${BOUNUS:.c=.o}
-OBJC_MAIN := ${SRC_MAIN:.c=.o}
 OBJC := ${SRCS:.c=.o}
 
-all: ${NAME} 
+all: ${NAME}
 
-${MAIN}: ${OBJC_MAIN} bonus
-	${CC} ${FLAGS} $< -L. -lft -o $@
-	
 bonus: ${OBJC} ${BONUS_OBJC}
 	${AR} ${NAME} $^
 
-${OBJC_MAIN}: ${SRC_MAIN}
-	${CC} ${FLAGS} -c $^ -o $@
-	
 ${NAME}: ${OBJC}
 	${AR} $@ $^
 
 ${OBJC}: %.o: %.c
 	${CC} ${FLAGS} -c $< -o $@
-	
+
 ${BONUS_OBJC}: %.o: %.c
 	${CC} ${FLAGS} -c $< -o $@
 
 fclean: clean
-	rm -f ${NAME} ${MAIN} 
+	rm -f ${NAME} ${MAIN}
 
 clean:
 	rm -f ${OBJC} ${OBJC_MAIN} ${BONUS_OBJC}
