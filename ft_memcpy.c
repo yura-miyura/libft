@@ -6,7 +6,7 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 08:33:59 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/30 10:19:47 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2025/10/30 10:22:16 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

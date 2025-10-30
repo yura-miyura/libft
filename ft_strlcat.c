@@ -6,18 +6,18 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 15:33:24 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/25 14:05:05 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2025/10/30 10:23:48 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t ft_strnlen(const char *s, size_t size)
+static size_t	t_strnlen(const char *s, size_t size)
 {
 	size_t	i;
 
 	i = 0;
-	while(i < size && s[i])
+	while (i < size && s[i])
 		i++;
 	return (i);
 }
