@@ -6,7 +6,7 @@
 #    By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/21 18:12:56 by yuriiartymi       #+#    #+#              #
-#    Updated: 2025/10/29 20:54:39 by yartym           ###   ########.fr        #
+#    Updated: 2025/10/30 10:20:31 by yuriiartymi      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,6 +76,10 @@ ${OBJC}: %.o: %.c
 
 ${BONUS_OBJC}: %.o: %.c
 	${CC} ${FLAGS} -c $< -o $@
+
+# so:
+# 	$(CC) -fPIC $(FLAGS) $(SRCS) $(BONUS)
+# 	gcc -shared -o libft.so $(OBJC) $(BONUS_OBJC)
 
 fclean: clean
 	rm -f ${NAME}

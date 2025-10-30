@@ -6,7 +6,7 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 19:00:56 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/28 19:01:15 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2025/10/30 08:20:13 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*tmp;
 
+	if (!lst || !*lst || !del)
+		return ;
 	tmp = *lst;
 	while (tmp)
 	{

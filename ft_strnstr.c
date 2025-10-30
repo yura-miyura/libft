@@ -6,12 +6,17 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 15:40:43 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/25 17:08:20 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2025/10/30 08:44:06 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* Original function doesn't throught the error when the haystack
+or needle is NULL. I've also deleted this error check */
+// if (!haystack || !needle)
+//		return (NULL);
+// Search for a substring within a string of a certain length.
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
@@ -19,11 +24,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	char	*trun_hay;
 
 	trun_hay = (char *) haystack;
-	if (!*needle)
-		return (trun_hay);
-	if (!haystack)
-		return (NULL);
 	i = 0;
+	if (!needle[i] || len == 0)
+		return (trun_hay);
 	while (trun_hay[i] && i < len)
 	{
 		if (trun_hay[i] == *needle)

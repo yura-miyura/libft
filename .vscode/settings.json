@@ -12,6 +12,7 @@
 		"ranges": "c",
 		"span": "c",
 		"utility": "c",
-		"libft_bonus.h": "c"
+		"libft_bonus.h": "c",
+		"string.h": "c"
 	}
 }

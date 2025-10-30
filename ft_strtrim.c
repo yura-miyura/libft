@@ -6,7 +6,7 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 08:51:33 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/27 14:27:26 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2025/10/30 07:55:29 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		end;
 	int		sub_size;
 
+	if (!s1)
+		return (NULL);
 	end = ft_strlen(s1) - 1;
 	start = 0;
 	while (s1[start] && is_char_in_set(s1[start], set))

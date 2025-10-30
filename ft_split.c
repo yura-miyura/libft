@@ -6,7 +6,7 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 16:57:58 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/28 08:29:08 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2025/10/30 07:59:52 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,8 @@ char	**ft_split(char const *s, char c)
 	char	**strs;
 	int		words;
 
+	if (!s)
+		return (NULL);
 	words = count_words(s, c);
 	strs = malloc(sizeof (char *) * (words + 1));
 	if (!strs)
@@ -71,16 +73,3 @@ char	**ft_split(char const *s, char c)
 	}
 	return (strs);
 }
-
-/* #include <stdio.h>
-int	main(void)
-{
-	char	*str = "hello world";
-	char	sep = ' ';
-
-	char **new = ft_split(str, sep);
-	int	i = 0;
-	while (i < 3)
-		printf("%s\n", new[i++]);
-	free(new);
-} */

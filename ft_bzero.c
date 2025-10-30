@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yartym <yartym@student.42.fr>              #+#  +:+       +#+        */
+/*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-10-23 19:59:01 by yartym            #+#    #+#             */
-/*   Updated: 2025-10-23 19:59:01 by yartym           ###   ########.fr       */
+/*   Created: 2025/10/23 19:59:01 by yartym            #+#    #+#             */
+/*   Updated: 2025/10/30 09:53:49 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ void	ft_bzero(void *s, size_t n)
 	unsigned char	*tmp;
 
 	tmp = (unsigned char *) s;
-	while (s && n-- > 0)
+	while (n-- > 0)
 		*tmp++ = 0;
 }
