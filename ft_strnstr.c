@@ -6,7 +6,7 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 15:40:43 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/30 08:44:06 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2025/10/30 11:22:14 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,11 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	j;
 	char	*trun_hay;
 
+	if (!haystack)
+		return (NULL);
 	trun_hay = (char *) haystack;
 	i = 0;
-	if (!needle[i] || len == 0)
+	if (!needle || !needle[i])
 		return (trun_hay);
 	while (trun_hay[i] && i < len)
 	{

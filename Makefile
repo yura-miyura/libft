@@ -6,7 +6,7 @@
 #    By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/21 18:12:56 by yuriiartymi       #+#    #+#              #
-#    Updated: 2025/10/30 10:27:01 by yuriiartymi      ###   ########.fr        #
+#    Updated: 2025/10/30 11:22:54 by yuriiartymi      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,7 @@ OBJC := ${SRCS:.c=.o}
 
 all: ${NAME}
 
-bonus: ${BONUS_OBJC}
+bonus: ${OBJC} ${BONUS_OBJC}
 	${AR} ${NAME} $^
 
 ${NAME}: ${OBJC}
