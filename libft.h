@@ -6,16 +6,14 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 08:10:34 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/30 07:57:07 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2025/10/31 15:39:44 by yartym           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# define INT_MIN -2147483648
-
-# include <stddef.h>
+# include <limits.h>
 # include <stdlib.h>
 # include <unistd.h>
 

@@ -6,7 +6,7 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 07:49:09 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/31 15:33:39 by yartym           ###   ########.fr       */
+/*   Updated: 2025/10/31 15:38:08 by yartym           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*memory;
 	size_t	space;
 
-	if (!count || !count || size > (size_t)(-1) / count)
+	if (count > 0 && size > ULONG_MAX / count)
 		return (NULL);
 	space = count * size;
 	memory = malloc(space);
