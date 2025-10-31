@@ -6,7 +6,7 @@
 #    By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/21 18:12:56 by yuriiartymi       #+#    #+#              #
-#    Updated: 2025/10/30 11:22:54 by yuriiartymi      ###   ########.fr        #
+#    Updated: 2025/10/31 12:22:32 by yartym           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,7 @@ OBJC := ${SRCS:.c=.o}
 
 all: ${NAME}
 
-bonus: ${OBJC} ${BONUS_OBJC}
+bonus: ${BONUS_OBJC}
 	${AR} ${NAME} $^
 
 ${NAME}: ${OBJC}
@@ -90,3 +90,6 @@ re: fclean all
 # https://github.com/Tripouille/libftTester
 # https://github.com/0x050f/libft-war-machine
 # https://github.com/alelievr/libft-unit-test
+# so:
+# 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) $(BOUNUS)
+# 	gcc -nostartfiles -shared -o libft.so $(OBJC) $(BONUS_OBJC)

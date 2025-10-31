@@ -23,11 +23,11 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	j;
 	char	*trun_hay;
 
-	if (!haystack)
+	if (!haystack && !len)
 		return (NULL);
 	trun_hay = (char *) haystack;
 	i = 0;
-	if (!needle || !needle[i])
+	if (!needle[i])
 		return (trun_hay);
 	while (trun_hay[i] && i < len)
 	{
