@@ -6,7 +6,7 @@
 #    By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/21 18:12:56 by yuriiartymi       #+#    #+#              #
-#    Updated: 2025/10/31 12:22:32 by yartym           ###   ########.fr        #
+#    Updated: 2025/12/23 10:04:29 by yuriiartymi      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,8 +49,7 @@ SRCS = ft_isalpha.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
-
-BOUNUS = ft_lstnew.c \
+		ft_lstnew.c \
 		ft_lstadd_front.c \
 		ft_lstsize.c \
 		ft_lstlast.c \
@@ -60,13 +59,9 @@ BOUNUS = ft_lstnew.c \
 		ft_lstiter.c \
 		ft_lstmap.c \
 
-BONUS_OBJC = ${BOUNUS:.c=.o}
 OBJC := ${SRCS:.c=.o}
 
 all: ${NAME}
-
-bonus: ${BONUS_OBJC}
-	${AR} ${NAME} $^
 
 ${NAME}: ${OBJC}
 	${AR} $@ $^
@@ -74,14 +69,11 @@ ${NAME}: ${OBJC}
 ${OBJC}: %.o: %.c
 	${CC} ${FLAGS} -c $< -o $@
 
-${BONUS_OBJC}: %.o: %.c
-	${CC} ${FLAGS} -c $< -o $@
-
 fclean: clean
 	rm -f ${NAME}
 
 clean:
-	rm -f ${OBJC} ${BONUS_OBJC}
+	rm -f ${OBJC}
 
 re: fclean all
 
