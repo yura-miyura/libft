@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/26 07:49:09 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/12/23 10:01:55 by yuriiartymi      ###   ########.fr       */
+/*   Created: 2025/12/24 12:26:49 by yuriiartymi       #+#    #+#             */
+/*   Updated: 2025/12/24 12:27:02 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,15 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*memory;
-	size_t	space;
 
-	if (!count || size > (size_t)(-1) / count)
+	if ((size != 0 && count > (SIZE_MAX / size)))
 		return (NULL);
-	space = count * size;
-	memory = malloc(space);
+	memory = malloc(count * size);
 	if (!memory)
+	{
+		free(memory);
 		return (NULL);
-	ft_bzero(memory, space);
+	}
+	ft_bzero(memory, count * size);
 	return (memory);
 }
