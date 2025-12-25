@@ -6,14 +6,14 @@
 #    By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/21 18:12:56 by yuriiartymi       #+#    #+#              #
-#    Updated: 2025/12/23 10:04:29 by yuriiartymi      ###   ########.fr        #
+#    Updated: 2025/12/25 09:51:06 by yuriiartymi      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME := libft.a
 CC := cc
 AR := ar -rcs
-FLAGS := -Wall -Werror -Wextra
+CFLAGS := -Wall -Werror -Wextra
 
 SRCS = ft_isalpha.c \
 		ft_isdigit.c \
@@ -67,7 +67,7 @@ ${NAME}: ${OBJC}
 	${AR} $@ $^
 
 ${OBJC}: %.o: %.c
-	${CC} ${FLAGS} -c $< -o $@
+	${CC} ${CFLAGS} -c $< -o $@
 
 fclean: clean
 	rm -f ${NAME}
@@ -83,5 +83,5 @@ re: fclean all
 # https://github.com/0x050f/libft-war-machine
 # https://github.com/alelievr/libft-unit-test
 # so:
-# 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) $(BOUNUS)
-# 	gcc -nostartfiles -shared -o libft.so $(OBJC) $(BONUS_OBJC)
+# 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) 
+# 	gcc -nostartfiles -shared -o libft.so $(OBJC) 
