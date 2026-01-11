@@ -1,8 +1,8 @@
 ### This project has been created as part of the 42 curriculum by yartym
 
-# LIBFT
+## LIBFT
 
-## `libft` is a static library of recreated standard libc, custom-made and linked list functions.
+### `libft` is a static library of recreated standard libc, custom-made and linked list functions
 
 ## About
 This project aimed to create useful functions within a single static library. It involves recreating various standard C library functions, as well as additional utility functions and linked list manipulation tools.
