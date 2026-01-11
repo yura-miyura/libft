@@ -56,7 +56,7 @@ Useful utility functions for string manipulation and file output.
 Functions to manipulate linked lists (`t_list`).
 
 | Function | Description |
-| :------- | ----------: |
+| :------- | :---------- |
 | `ft_lstnew` | Creates a new list element. |
 | `ft_lstadd_front` | Adds an element at the beginning of a list. |
 | `ft_lstsize` | Counts the number of elements in a list. |
