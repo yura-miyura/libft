@@ -1,9 +1,11 @@
-# This project has been created as part of the 42 curriculum by yartym
+### This project has been created as part of the 42 curriculum by yartym
 
-## libft is a static library of some libc, custom and linked list functions
+## LIBFT
+
+### `libft` is a static library of recreated standard libc, custom-made and linked list functions
 
 ## About
-This project is the very first project in the 42 curriculum. The goal is to create a library of functions that will be reused in future projects. It involves recreating various standard C library functions, as well as additional utility functions and linked list manipulation tools.
+This project aimed to create useful functions within a single static library. It involves recreating various standard C library functions, as well as additional utility functions and linked list manipulation tools.
 
 ## List of Functions
 
@@ -101,6 +103,6 @@ cc <file_name>.c -L. -lft -o <file_name>
 
 ## Resources
 
-### 1) [CS50](https://www.youtube.com/watch?v=HJP0a6vKvlo&list=PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6)
-### 2) [man](https://man7.org/)
-### 3) [google](https://www.google.com/)
+1) [CS50](https://www.youtube.com/watch?v=HJP0a6vKvlo&list=PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6)
+2) [man](https://man7.org/)
+3) [google](https://www.google.com/)
