@@ -10,7 +10,7 @@ There are three groups of functions that have been recreated:
 Standard C library functions recreated to understand the underlying logic.
 
 | Function | Description |
-| :--- | :--- |
+| :------- | :---------- |
 | `ft_isalpha` | Checks for an alphabetic character. |
 | `ft_isdigit` | Checks for a digit (0 through 9). |
 | `ft_isalnum` | Checks for an alphanumeric character. |
@@ -56,7 +56,7 @@ Useful utility functions for string manipulation and file output.
 Functions to manipulate linked lists (`t_list`).
 
 | Function | Description |
-| :--- | :--- |
+| :------- | :---------- |
 | `ft_lstnew` | Creates a new list element. |
 | `ft_lstadd_front` | Adds an element at the beginning of a list. |
 | `ft_lstsize` | Counts the number of elements in a list. |
