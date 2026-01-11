@@ -39,7 +39,7 @@ Standard C library functions recreated to understand the underlying logic.
 Useful utility functions for string manipulation and file output.
 
 | Function | Description |
-| :--- | :--- |
+| :------- | :---------- |
 | `ft_substr` | Returns a substring from a string. |
 | `ft_strjoin` | Concatenates two strings. |
 | `ft_strtrim` | Trims the beginning and end of string with specified set of chars. |
@@ -56,6 +56,7 @@ Useful utility functions for string manipulation and file output.
 Functions to manipulate linked lists (`t_list`).
 
 | Function | Description |
+| :--- | :--- |
 | `ft_lstnew` | Creates a new list element. |
 | `ft_lstadd_front` | Adds an element at the beginning of a list. |
 | `ft_lstsize` | Counts the number of elements in a list. |
