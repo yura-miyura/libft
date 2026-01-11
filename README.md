@@ -2,11 +2,12 @@
 
 ## libft is a static library of some libc, custom and linked list functions
 
-This project is created to have a library of functions that can be reused in future projects 
-and is the first project in 42 curicculum. 
-There are three groups of functions that have been recreated:
+## About
+This project is the very first project in the 42 curriculum. The goal is to create a library of functions that will be reused in future projects. It involves recreating various standard C library functions, as well as additional utility functions and linked list manipulation tools.
 
-## 1. Libc Functions
+## List of Functions
+
+### 1. Libc Functions
 Standard C library functions recreated to understand the underlying logic.
 
 | Function | Description |
@@ -67,15 +68,38 @@ Functions to manipulate linked lists (`t_list`).
 | `ft_lstiter` | Applies a function to the content of all list's elements. |
 | `ft_lstmap` | Applies a function to the content of all list's elements into new list. |
 
-## Instruction
-1) Create static library with Makefile
+## Installation 
+
+Create static library with Makefile
+
 ```bash
 make
 ```
+## Usage
 
-2) Use it with your own program
+### 1. Include the heade in your C file:
+
+```C
+#include "libft.h"
+
+int main(void)
+{
+    ft_putstr_fd("Hello, Libft!", 1);
+    return (0);
+}
+```
+
+### 2. Compile your project:
+
 ```bash
 cc <file_name>.c -L. -lft -o <file_name>
 ```
 
-Resources
+* `-L.` tells the compiler to look for libraries in the current directory.
+
+* `-lft` links the libft library (the compiler automatically adds the lib prefix and .a suffix).
+
+Resources:
+1) [CS50](https://www.youtube.com/watch?v=HJP0a6vKvlo&list=PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6)
+2) [man](https://man7.org/)
+3) [google](https://www.google.com/)
