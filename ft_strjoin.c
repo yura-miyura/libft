@@ -6,12 +6,13 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 07:36:45 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/27 08:50:51 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:44:28 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Concatenates two strings.
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*new_str;

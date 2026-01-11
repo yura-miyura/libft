@@ -1,17 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_stbstr.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 09:01:59 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/26 09:04:58 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:44:18 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Returns a substring from a string.
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;

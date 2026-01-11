@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yartym <yartym@student.42.fr>              #+#  +:+       +#+        */
+/*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-10-22 15:32:56 by yartym            #+#    #+#             */
-/*   Updated: 2025-10-22 15:32:56 by yartym           ###   ########.fr       */
+/*   Created: 2025/10/22 15:32:56 by yartym            #+#    #+#             */
+/*   Updated: 2026/01/11 22:36:30 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Is ascii character
+// Checks whether c fits into the ASCII character set.
 int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);

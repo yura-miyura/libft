@@ -6,12 +6,13 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 09:21:01 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/30 08:00:48 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:45:34 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Applies a function to each character of a string.
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*new_s;

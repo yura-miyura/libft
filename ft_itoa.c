@@ -6,7 +6,7 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 08:27:01 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/30 07:59:24 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:45:23 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static void	put_numbers(int n, char *n_str, int n_len)
 	n_str[n_len - 1] = n % 10 + '0';
 }
 
-// Returns int as a stirng
+// Converts a number into a string.
 char	*ft_itoa(int n)
 {
 	size_t	size;

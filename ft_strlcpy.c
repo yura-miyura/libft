@@ -6,12 +6,13 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 13:28:22 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/25 08:50:35 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:38:58 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Copies string to a specific size.
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;

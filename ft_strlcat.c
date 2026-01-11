@@ -6,7 +6,7 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 15:33:24 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/30 10:29:28 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:39:23 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ static size_t	ft_strnlen(const char *s, size_t size)
 	return (i);
 }
 
+// Concatenates string to a specific size.
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	full_size;

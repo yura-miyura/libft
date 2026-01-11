@@ -6,13 +6,13 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 18:58:40 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/29 09:13:44 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:47:33 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Add to the end of the list
+// Adds an element at the end of a list.
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*node;

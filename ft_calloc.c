@@ -6,13 +6,13 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/24 12:26:49 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/12/24 12:27:02 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:43:48 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Allocates memmory for amount of objcs of size
+// Allocates memory and sets its bytes' values to 0
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*memory;

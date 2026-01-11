@@ -6,7 +6,7 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 16:57:58 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/30 07:59:52 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:45:00 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ static int	fill_array(char	**strs, char const *s, char c, int words)
 	return (0);
 }
 
+// Splits a string using a char as parameter.
 char	**ft_split(char const *s, char c)
 {
 	char	**strs;

@@ -6,12 +6,13 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 12:08:58 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/11/23 09:19:26 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:45:53 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Outputs a char to a file descriptor.
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);

@@ -6,12 +6,13 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 23:36:26 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/25 08:50:18 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:41:34 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Locates character in string (last occurrence).
 char	*ft_strrchr(const char *s, int c)
 {
 	char			*loc;

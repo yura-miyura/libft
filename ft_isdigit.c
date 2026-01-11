@@ -6,13 +6,13 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 11:50:58 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/23 07:57:46 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:36:07 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Is digit
+// Checks for a digit (0 through 9).
 int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');

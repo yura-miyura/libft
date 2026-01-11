@@ -6,7 +6,7 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 08:51:33 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/30 07:55:29 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:44:43 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ static int	is_char_in_set(char c, char const *set)
 	return (is_in);
 }
 
+// Trims the beginning and end of string with specified set of chars.
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*new;

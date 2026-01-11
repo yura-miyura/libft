@@ -6,13 +6,13 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 19:03:47 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/28 19:04:08 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:48:14 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Creates new list with changed content of the orignal list
+// Applies a function to the content of all list's elements into new list.
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_list;

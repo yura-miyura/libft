@@ -6,13 +6,13 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 18:56:55 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/29 08:18:16 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:47:13 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Size of list
+// Counts the number of elements in a list.
 int	ft_lstsize(t_list *lst)
 {
 	size_t	len;

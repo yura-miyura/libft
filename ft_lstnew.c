@@ -6,13 +6,13 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 16:24:12 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/28 18:53:44 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:46:43 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Creates a new word
+// Creates a new list element.
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*list;

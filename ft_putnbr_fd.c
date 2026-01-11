@@ -6,13 +6,13 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 15:37:54 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/11/23 08:57:56 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:46:31 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Displays number with selected file descriptor
+// Outputs a number to a file descriptor.
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n < 0)

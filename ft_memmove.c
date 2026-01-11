@@ -6,16 +6,13 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 11:11:07 by yartym            #+#    #+#             */
-/*   Updated: 2025/10/30 10:19:18 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:38:45 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Doesn't catch segmentation fault when dest || src is NULL
-// if (!dest || !src)
-// 		return (NULL);
-// Moves memory address and can overlap
+// Copies memory area (handles overlapping).
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*tmp_dest;

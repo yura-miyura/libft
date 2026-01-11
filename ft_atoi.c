@@ -6,15 +6,13 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 17:09:05 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/25 17:56:13 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:43:34 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Returns int from string number, can pass
-// inserted + or - in the begining of the word
-// any interacions are with letter going to be treated as 0
+// Converts a string to an integer. to be treated as 0
 int	ft_atoi(const char *str)
 {
 	int		result;

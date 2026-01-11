@@ -6,12 +6,13 @@
 /*   By: yuriiartymicloud.com <yuriiartymicloud.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 13:42:08 by yuriiartymi       #+#    #+#             */
-/*   Updated: 2025/10/25 14:07:01 by yuriiartymi      ###   ########.fr       */
+/*   Updated: 2026/01/11 22:41:44 by yuriiartymi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Compares two strings.
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
