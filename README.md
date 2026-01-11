@@ -103,6 +103,6 @@ cc <file_name>.c -L. -lft -o <file_name>
 
 ## Resources
 
-### 1) [CS50](https://www.youtube.com/watch?v=HJP0a6vKvlo&list=PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6)
-### 2) [man](https://man7.org/)
-### 3) [google](https://www.google.com/)
+1) [CS50](https://www.youtube.com/watch?v=HJP0a6vKvlo&list=PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6)
+2) [man](https://man7.org/)
+3) [google](https://www.google.com/)
