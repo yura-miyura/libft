@@ -14,12 +14,15 @@ ft_strmapi, ft_striteri, ft_putchar_fd, ft_putstr_fd,ft_putendl_fd, ft_putnbr_fd
 
 * Linked list (ft_lstnew, ft_lstadd_front, ft_lstsize, ft_lstlast, ft_lstadd_back, ft_lstdelone, ft_lstclear, ft_lstiter, ft_lstmap)
 
-Instruction
+## Instruction
 1) To create static library
+```c
 make
+```
 
 2) Use it with your own program
+```c
 cc <file_name>.c -L. -lft -o <file_name>
-
+```
 
 Resources
