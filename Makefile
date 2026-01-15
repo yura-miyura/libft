@@ -82,6 +82,6 @@ re: fclean all
 # https://github.com/Tripouille/libftTester
 # https://github.com/0x050f/libft-war-machine
 # https://github.com/alelievr/libft-unit-test
-# so:
-# 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) 
-# 	gcc -nostartfiles -shared -o libft.so $(OBJC) 
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
+	gcc -nostartfiles -shared -o libft.so $(OBJC)

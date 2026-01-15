@@ -1,4 +1,4 @@
-### This project has been created as part of the 42 curriculum by yartym
+### _This project has been created as part of the 42 curriculum by yartym_
 
 ## LIBFT
 
@@ -70,7 +70,7 @@ Functions to manipulate linked lists (`t_list`).
 | `ft_lstiter` | Applies a function to the content of all list's elements. |
 | `ft_lstmap` | Applies a function to the content of all list's elements into new list. |
 
-## Installation 
+## Installation
 
 Create static library with Makefile
 
@@ -106,3 +106,8 @@ cc <file_name>.c -L. -lft -o <file_name>
 1) [CS50](https://www.youtube.com/watch?v=HJP0a6vKvlo&list=PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6)
 2) [man](https://man7.org/)
 3) [google](https://www.google.com/)
+
+## Testers
+
+1) [War-machine](https://github.com/0x050f/libft-war-machine)
+2) [Unit](https://github.com/alelievr/libft-unit-test)
