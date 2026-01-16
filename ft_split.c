@@ -47,7 +47,11 @@ static int	fill_array(char	**strs, char const *s, char c, int words)
 			end++;
 		strs[word] = ft_substr(s, start, end - start);
 		if (!strs[word])
+		{
+			while(word >= 0)
+				free(strs[word--]);
 			return (1);
+		}
 		start = end;
 		word++;
 	}
